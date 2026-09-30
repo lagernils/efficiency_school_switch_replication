@@ -7,7 +7,7 @@ The paper compares Deferred Acceptance (DA) against Top Trading Cycles (TTC) and
 Efficiency-Adjusted Deferred Acceptance (EADAM) in Swedish school *switch*
 programs, where every participant already holds a seat, and asks how the
 efficiency gap between the stable and the efficient mechanisms responds to
-adding spare capacity.
+adding spare capacity. The code is written by Nils Lager.
 
 **No real data is distributed with this package.** The municipality extracts are
 individual-level administrative records for school pupils and cannot be
