@@ -1,0 +1,12 @@
+# Python dependencies for the simulation half of the pipeline.
+#
+# Versions below are the ones the published results were produced with. The
+# code uses only long-stable APIs of both packages, so nearby versions should
+# work; pin exactly if you need bit-for-bit reproduction.
+#
+#   pip install -r requirements.txt
+#
+# Everything else the code imports (csv, json, random, statistics, pathlib,
+# dataclasses, collections, heapq, datetime, typing) is in the standard library.
+pandas>=2.0,<3.0
+numpy>=1.24,<3.0

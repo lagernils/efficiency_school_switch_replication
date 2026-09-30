@@ -1,0 +1,7 @@
+﻿placementRoundId,participantId,schoolProgramId,grade,ranking,rankGroup,rankGroupDescription,distance,relativeDistance,priorityGroup
+1,1,A,0,2,2,Ej aktivt val,0,-1000,2
+1,1,B,0,1,1,Aktivt val,0,-1000,2
+1,1,C,0,3,2,Ej aktivt val,0,-1000,2
+1,2,A,0,1,1,Aktivt val,0,-1000,2
+1,2,B,0,2,2,Ej aktivt val,0,-1000,2
+1,2,C,0,3,2,Ej aktivt val,0,-1000,2

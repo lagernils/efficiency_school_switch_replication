@@ -1,0 +1,20 @@
+# R dependencies for the analysis half of the pipeline.
+#
+#   Rscript -e 'p <- readLines("r-requirements.txt"); install.packages(p[nzchar(p) & !startsWith(p, "#")])'
+#
+# Required -- the scripts will not run without these:
+dplyr
+tidyr
+readr
+ggplot2
+glue
+jsonlite
+patchwork
+purrr
+# Optional -- improve output but degrade gracefully with a message if absent.
+# ragg + systemfonts give higher-quality PNGs and find Times New Roman, which
+# matches the paper's font; showtext + sysfonts are the fallback font path.
+ragg
+systemfonts
+showtext
+sysfonts

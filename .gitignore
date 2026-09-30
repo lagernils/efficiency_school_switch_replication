@@ -1,0 +1,65 @@
+# =============================================================================
+# Data
+# =============================================================================
+# The real municipality extracts are individual-level records for school pupils
+# and are NEVER committed. Run tools/make_synthetic_data.py to populate raw/
+# with a synthetic dataset that has the same file layout and column schema.
+raw/*
+!raw/.gitkeep
+!raw/README.md
+
+# Belt and braces: no CSV may be committed anywhere in the tree. The
+# diagnostics/ directory in particular has held real placement dumps and lottery
+# fixtures (participant ids, pupil ids, grades, current schools, full
+# rank-ordered lists) which must never be published.
+*.csv
+replication_rr/diagnostics/*.csv
+
+# =============================================================================
+# Data-cleaning exceptions
+# =============================================================================
+# exclusions/ holds four small lookup tables (rounds to skip, reissued school
+# programme ids, manual grade overrides). They are configuration, not data, so the header-only versions
+# ARE committed -- that is how a reader sees the mechanism and sees that nothing
+# is excluded on the synthetic dataset. See exclusions/README.md.
+!exclusions/*.csv
+# The real values are source-system identifiers and live in a .local.csv, which
+# is never committed. This rule comes after the negation above, so it wins.
+exclusions/*.local.csv
+
+# tests/fixtures/ holds three tiny hand-built worked examples (pupils 1..10,
+# schools "School A".."School D") used by test_mode. They contain no real data
+# and are committed.
+!tests/fixtures/**/*.csv
+
+# =============================================================================
+# Generated output
+# =============================================================================
+# NOTHING generated is committed -- not intermediates, and not the final tables
+# and figures either. Everything under these directories is produced by running
+# the pipeline, and shipping it invites confusion about which run a given file
+# came from.
+*/analysis/output/*
+!*/analysis/output/.gitkeep
+*/build/output/*
+!*/build/output/.gitkeep
+*/build/input/*
+!*/build/input/.gitkeep
+*/analysis/input/*
+!*/analysis/input/.gitkeep
+
+# =============================================================================
+# Language / editor / OS
+# =============================================================================
+__pycache__/
+*.py[cod]
+.Rhistory
+Rplots.pdf
+.RData
+.Rproj.user/
+.DS_Store
+.claude/
+
+# Staging area for artefacts to be removed before the first commit. Never
+# committed; delete the directory itself once you have reviewed it.
+_TO_DELETE_BEFORE_PUBLISHING/

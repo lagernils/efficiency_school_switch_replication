@@ -1,0 +1,4 @@
+﻿placementRoundId,municipalityId,academicYear,roundName,schoolStartDate,roundType,decisionType,hasNotifiedInitialPlacementDecisions
+1,1,2021,School Switch A,2021-09-01,SCHOOL_SWITCH,OFFER,2021-06-01 00:00
+2,1,2022,School Switch B,2022-09-01,SCHOOL_SWITCH,OFFER,2022-06-01 00:00
+3,1,2023,School Switch C,2023-09-01,SCHOOL_SWITCH,OFFER,2023-06-01 00:00

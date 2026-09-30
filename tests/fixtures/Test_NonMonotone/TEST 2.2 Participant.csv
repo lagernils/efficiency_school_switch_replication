@@ -1,0 +1,7 @@
+﻿ParticipantId,placementRoundId,studentId,currentChoiceId,switchingFromSchoolProgramId,choiceCreatedAt,participantType,lottery_number
+1,1,1,,A,2021-08-01 09:32,,5
+2,1,2,,B,2021-08-01 09:32,,2
+3,2,3,,C,2021-08-10 09:32,,3
+4,2,4,,A,2021-08-10 09:32,,4
+5,3,5,,A,2022-04-20 09:32,,1
+6,3,6,,A,2022-04-20 09:32,,6

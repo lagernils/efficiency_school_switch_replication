@@ -1,0 +1,13 @@
+﻿placementRoundId,participantId,schoolProgramId,grade,ranking,rankGroup,rankGroupDescription,distance,relativeDistance,priorityGroup,lottery_number
+2,5,A,0,2,2,Ej aktivt val,0,-1000,2,5
+2,5,B,0,1,1,Aktivt val,0,2000,2,5
+2,5,C,0,3,2,Ej aktivt val,0,-1000,2,5
+2,5,D,0,4,2,Ej aktivt val,0,-1000,2,5
+2,6,A,0,2,2,Ej aktivt val,0,-1000,2,6
+2,6,B,0,3,2,Ej aktivt val,0,-1000,2,6
+2,6,C,0,1,1,Aktivt val,0,-1000,2,6
+2,6,D,0,4,2,Ej aktivt val,0,-1000,2,6
+2,7,A,0,2,2,Ej aktivt val,0,-1000,2,7
+2,7,B,0,3,2,Ej aktivt val,0,-1000,2,7
+2,7,C,0,1,1,Aktivt val,0,-2000,2,7
+2,7,D,0,4,2,Ej aktivt val,0,-1000,2,7
